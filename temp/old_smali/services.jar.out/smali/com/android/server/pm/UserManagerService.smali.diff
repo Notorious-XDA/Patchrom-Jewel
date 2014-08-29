@@ -1,0 +1,18 @@
+*** ./smali/com/android/server/pm/UserManagerService.smali	2014-08-24 16:05:41.903321523 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/services.jar.out/./smali/com/android/server/pm/UserManagerService.smali	2014-08-24 16:09:44.666646355 -0500
+***************
+*** 5385,5390 ****
+--- 5385,5397 ----
+      .parameter "userId"
+  
+      .prologue
++     if-nez p1, :cond_miui
++ 
++     const/4 v0, 0x1
++ 
++     return v0
++ 
++     :cond_miui
+      iget-object v1, p0, Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
+  
+      monitor-enter v1

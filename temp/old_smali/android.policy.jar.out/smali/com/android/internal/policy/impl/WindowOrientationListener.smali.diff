@@ -1,0 +1,19 @@
+*** ./smali/com/android/internal/policy/impl/WindowOrientationListener.smali	2014-08-24 16:06:19.903843374 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/android.policy.jar.out/./smali/com/android/internal/policy/impl/WindowOrientationListener.smali	2014-08-24 16:10:26.503217216 -0500
+***************
+*** 62,68 ****
+      .parameter "handler"
+  
+      .prologue
+!     const/4 v0, 0x2
+  
+      invoke-direct {p0, p1, p2, v0}, Lcom/android/internal/policy/impl/WindowOrientationListener;-><init>(Landroid/content/Context;Landroid/os/Handler;I)V
+  
+--- 62,68 ----
+      .parameter "handler"
+  
+      .prologue
+!     const/4 v0, 0x3
+  
+      invoke-direct {p0, p1, p2, v0}, Lcom/android/internal/policy/impl/WindowOrientationListener;-><init>(Landroid/content/Context;Landroid/os/Handler;I)V
+  

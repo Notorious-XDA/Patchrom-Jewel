@@ -1,0 +1,21 @@
+*** TelephonyManager.smali	2014-08-24 16:08:35.489701081 -0500
+--- TelephonyManager.smali	2014-08-24 16:12:48.573151274 -0500
+***************
+*** 1970,1978 ****
+      .locals 1
+  
+      .prologue
+!     const-string v0, "gsm.sim.operator.numeric"
+! 
+!     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+  
+      move-result-object v0
+  
+--- 1979,1985 ----
+      .locals 1
+  
+      .prologue
+!     invoke-static {p0}, Landroid/telephony/Injector$TelephonyManagerHook;->getSimOperator(Landroid/telephony/TelephonyManager;)Ljava/lang/String;
+  
+      move-result-object v0
+  

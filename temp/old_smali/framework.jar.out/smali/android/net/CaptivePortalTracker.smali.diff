@@ -1,0 +1,19 @@
+*** ./smali/android/net/CaptivePortalTracker.smali	2014-08-24 16:06:31.307999887 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/framework.jar.out/./smali/android/net/CaptivePortalTracker.smali	2014-08-24 16:10:40.127402988 -0500
+***************
+*** 28,34 ****
+  
+  .field private static final DEFAULT_SERVER:Ljava/lang/String; = "clients3.google.com"
+  
+! .field private static final DELAYED_CHECK_INTERVAL_MS:I = 0x2710
+  
+  .field public static final EXTRA_BSSID:Ljava/lang/String; = "extra_bssid"
+  
+--- 28,34 ----
+  
+  .field private static final DEFAULT_SERVER:Ljava/lang/String; = "clients3.google.com"
+  
+! .field private static final DELAYED_CHECK_INTERVAL_MS:I = 0x1f4
+  
+  .field public static final EXTRA_BSSID:Ljava/lang/String; = "extra_bssid"
+  

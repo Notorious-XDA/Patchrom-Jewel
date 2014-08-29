@@ -1,0 +1,19 @@
+*** ./smali/android/net/CaptivePortalTracker$DelayedCaptiveCheckState.smali	2014-08-24 16:06:33.652032056 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/framework.jar.out/./smali/android/net/CaptivePortalTracker$DelayedCaptiveCheckState.smali	2014-08-24 16:10:43.055442907 -0500
+***************
+*** 76,82 ****
+  
+      iget-object v1, p0, Landroid/net/CaptivePortalTracker$DelayedCaptiveCheckState;->this$0:Landroid/net/CaptivePortalTracker;
+  
+!     const-wide/16 v2, 0x2710
+  
+      invoke-virtual {v1, v0, v2, v3}, Landroid/net/CaptivePortalTracker;->sendMessageDelayed(Landroid/os/Message;J)V
+  
+--- 76,82 ----
+  
+      iget-object v1, p0, Landroid/net/CaptivePortalTracker$DelayedCaptiveCheckState;->this$0:Landroid/net/CaptivePortalTracker;
+  
+!     const-wide/16 v2, 0x1f4
+  
+      invoke-virtual {v1, v0, v2, v3}, Landroid/net/CaptivePortalTracker;->sendMessageDelayed(Landroid/os/Message;J)V
+  

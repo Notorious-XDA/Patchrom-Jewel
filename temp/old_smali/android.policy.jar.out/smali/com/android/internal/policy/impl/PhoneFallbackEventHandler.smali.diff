@@ -1,0 +1,18 @@
+*** ./smali/com/android/internal/policy/impl/PhoneFallbackEventHandler.smali	2014-08-24 16:06:20.091845981 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/android.policy.jar.out/./smali/com/android/internal/policy/impl/PhoneFallbackEventHandler.smali	2014-08-24 16:10:26.707220002 -0500
+***************
+*** 253,258 ****
+--- 253,265 ----
+      return-object v0
+  .end method
+  
++ .method handleCameraKeyEvent()V
++     .locals 0
++ 
++     .prologue
++     return-void
++ .end method
++ 
+  .method onKeyDown(ILandroid/view/KeyEvent;)Z
+      .locals 13
+      .parameter "keyCode"

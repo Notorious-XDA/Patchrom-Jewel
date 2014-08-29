@@ -1,0 +1,366 @@
+===================================
+Since Sat Aug 23 09:07:56 UTC 2014
+===================================
+
+   * external/koush/Superuser
+99acfee Automatic translation import
+
+   * external/whispersystems/WhisperPush
+1cb09cd Automatic translation import
+
+   * frameworks/base
+7df5fcc Automatic translation import
+
+   * packages/apps/Apollo
+50aafd8 Automatic translation import
+
+   * packages/apps/BasicSmsReceiver
+b667013 Automatic translation import
+
+   * packages/apps/Bluetooth
+b444297 Automatic translation import
+
+   * packages/apps/BluetoothExt
+acffa5c Automatic translation import
+
+   * packages/apps/Browser
+1d30215 Automatic translation import
+
+   * packages/apps/CMAccount
+def937d Automatic translation import
+
+   * packages/apps/CMBugReport
+0c9f6f7 Automatic translation import
+
+   * packages/apps/CMFileManager
+1e05f27 Automatic translation import
+
+   * packages/apps/CMHome
+2ada77e Automatic translation import
+
+   * packages/apps/CMUpdater
+9c6868f Automatic translation import
+
+   * packages/apps/CMWallpapers
+7122d43 Automatic translation import
+
+   * packages/apps/Calculator
+8eb08c1 Automatic translation import
+
+   * packages/apps/Calendar
+86b2d7b Automatic translation import
+
+   * packages/apps/Camera2
+c54e60c Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver
+a691d0c Automatic translation import
+
+   * packages/apps/CertInstaller
+ac7473b Automatic translation import
+
+   * packages/apps/Contacts
+bdef2b1 Automatic translation import
+
+   * packages/apps/ContactsCommon
+1f6c792 Automatic translation import
+
+   * packages/apps/DSPManager
+c85706e Automatic translation import
+
+   * packages/apps/DeskClock
+d879b65 Automatic translation import
+
+   * packages/apps/Dialer
+6b50056 Automatic translation import
+
+   * packages/apps/Email
+b7cf9a5 Automatic translation import
+
+   * packages/apps/Exchange
+fd1ddb8 Automatic translation import
+
+   * packages/apps/Gallery2
+6f5218f Automatic translation import
+
+   * packages/apps/HTMLViewer
+a14e086 Automatic translation import
+
+   * packages/apps/InCallUI
+ea78a15 Automatic translation import
+
+   * packages/apps/KeyChain
+ea83ab8 Automatic translation import
+
+   * packages/apps/LockClock
+65ba000 Automatic translation import
+
+   * packages/apps/Mms
+32ae394 Mms: Modify AOSP LV translations
+4691457 Automatic translation import
+
+   * packages/apps/Nfc
+08b682c Automatic translation import
+
+   * packages/apps/PackageInstaller
+9451a7d Automatic translation import
+
+   * packages/apps/Settings
+c1d61c7 settings: Add support for SRE
+ac39da4 Automatic translation import
+
+   * packages/apps/SoundRecorder
+83d8fde Automatic translation import
+
+   * packages/apps/Stk
+de35d1d Automatic translation import
+
+   * packages/apps/Tag
+9778fbf Automatic translation import
+
+   * packages/apps/ThemeChooser
+6435a95 Automatic translation import
+
+   * packages/apps/Torch
+923b5d6 Automatic translation import
+
+   * packages/apps/Trebuchet
+c0d6e8e Automatic translation import
+
+   * packages/apps/UnifiedEmail
+5ba4b53 Automatic translation import
+
+   * packages/apps/VideoEditor
+bc404ff Automatic translation import
+
+   * packages/apps/VoiceDialer
+a3d6164 Automatic translation import
+
+   * packages/apps/VoicePlus
+9009ac8 Automatic translation import
+
+   * packages/inputmethods/LatinIME
+eb9f51d Automatic translation import
+
+   * packages/providers/CalendarProvider
+f7e5a8c Automatic translation import
+
+   * packages/providers/ContactsProvider
+c6fc13d Automatic translation import
+
+   * packages/providers/DownloadProvider
+eca2ff9 Automatic translation import
+
+   * packages/providers/MediaProvider
+aa3fa24 Automatic translation import
+
+   * packages/providers/TelephonyProvider
+8112c4c Automatic translation import
+
+   * packages/providers/ThemesProvider
+0327389 Automatic translation import
+
+   * packages/providers/UserDictionaryProvider
+6d13486 Automatic translation import
+
+   * packages/screensavers/Basic
+4dba053 Automatic translation import
+
+   * packages/screensavers/PhotoTable
+f56a6fd Automatic translation import
+
+   * packages/services/Telephony
+e494b04 Automatic translation import
+
+   * packages/wallpapers/Basic
+50eaaf6 Automatic translation import
+
+   * packages/wallpapers/Galaxy4
+25e3573 Automatic translation import
+
+   * packages/wallpapers/HoloSpiral
+f2a3d24 Automatic translation import
+
+   * packages/wallpapers/LivePicker
+bf91568 Automatic translation import
+
+   * packages/wallpapers/MagicSmoke
+f01730f Automatic translation import
+
+   * packages/wallpapers/MusicVisualization
+77f483d Automatic translation import
+
+   * packages/wallpapers/NoiseField
+3c4ef46 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam
+e0a73e1 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase
+a523e7f Automatic translation import
+
+===================================
+Since Thu Aug 21 09:46:23 UTC 2014
+===================================
+
+   * frameworks/av
+4bb94f3 ENGR00294739 coreimage, screenrecord sometimes fail when shift different video
+
+   * frameworks/base
+ce7bd8d SystemUI: NavbarEditor: Fix saveKeys logic
+ce37355 SystemUI: enable equalizer for Wifi display
+4c8a0d0 Themes: Avoid NPE when setting text in TickerView
+43d14a4 tether: tethering chooses wrong upstream when mobile_dun is required
+5a30e8a Use hidden API to validate APK chains
+72dc45f SystemUI: don't show eq tile while casting
+a2f4c3e frameworks: add ongoing notification while collecting bug report
+0c5d852 frameworks: allow LockPatternView to be rotated
+82b07aa Move idmap to frameworks/base [2/2]
+be61238 Lycamobile (MNC04) considered non-roaming on Vodafone (MNC01)
+f0b71b1 Vectone/Delight (MNC07) considered non-roaming on NOS (MNC03)
+05a4dc4 Themes: Load missing style attributes from original style
+a83d696 Themes: Fix blurry composed icons
+9a5386f Revert "frameworks: set default expanded desktop style"
+
+   * frameworks/opt/hardware
+96a8df4 cmhw: Add stubs for SRE support
+
+   * packages/apps/CMBugReport
+313f84f Add ART vs Dalvik label to reports
+4ae68a2 CMBugReport: move config parameters to xml file
+
+   * packages/apps/Dialer
+cf28e0c Add to dialer stats: track actions in the dialer to actually initiate a call
+
+   * packages/apps/Settings
+05d1f35 Settings: fix Wifi/WifiAP tile inconsistency
+3d56d11 Settings: use ActivityManager method for requesting bug report
+1656c19 Revert "Settings: update default expanded desktop style"
+
+   * system/netd
+78defa7 Don't choke if IPv6 rules fail.
+
+   * vendor/cm
+dea8e65 Add APN for Telenet when internationally roaming (MNC=206 MCC=01)
+6eba3fb Add TIGO and VOX for Paraguay
+e725765 apns-conf: Fix Elisa EE MMS port.
+2a729da Revert "vendor/cm: add CMBugReport"
+
+===================================
+Since Wed Aug 20 09:36:31 UTC 2014
+===================================
+
+   * frameworks/av
+26c53e6 Merge "Revert "Fix decoder EOS handling"" into cm-11.0
+8f48f6c Revert "Fix decoder EOS handling"
+
+   * frameworks/base
+521e840 frameworks:base: SystemUI: cleanup a duplicate permission
+
+   * frameworks/native
+5644353 Move idmap to frameworks/base [1/2]
+
+   * packages/apps/Bluetooth
+90cdc90 bluetooth: avrcp - Respond to PDU 0x16 correctly
+
+   * packages/apps/CMBugReport
+7bac166 CMBugReport: Fix PACAKAGE->PACKAGE typo
+65a04a2 move the ro.buildid to a custom field on jira
+
+   * packages/apps/CMUpdater
+9cffbc0 CMUpdater: Fetch changelogs for updates only if explicitly requested.
+
+   * packages/apps/DeskClock
+2240c95 DeskClock: restore vibrations after screen is turned off
+
+   * packages/apps/Settings
+2670ca2 Settings: remove Expanded Desktop from Power Menu if unavailable
+
+===================================
+Since Tue Aug 19 09:29:33 UTC 2014
+===================================
+
+   * bionic
+edb9013 Fix build for x86. Remove duplicate mcmchr from Android.mk. Other implemented in arch-x86/x86.mk
+
+   * external/powertop
+54ace06 [x86] Add missing libpci includes
+
+   * frameworks/av
+ba1da99 audioflinger: only exchange AUDIO_SOURCE_HOTWORD when using pre-kitkat audio-policy
+059abab Revert "audio:Avoid AudioTrackThread if Track creation fails"
+
+   * frameworks/base
+f094fe6 ShutdownThread: set soft reboot trigger accordingly
+31d45c8 Themes: Make sure composed icon info is meaningful
+8fe5ff1 Themes: Fix icon filters clamping to wrong values
+
+   * kernel/htc/msm8960
+585943f msm: HTC: t6: regenerate defconfig
+44c2bd8 staging: Prima: kk_2.7_rb1.42: release 3.2.7.47
+
+   * packages/apps/CMBugReport
+2502b99 CMBugReport: disable reporting if Xposed is installed
+
+   * packages/apps/CMUpdater
+d1df72c CMUpdater: Switch all network requests to utilize Volley.
+
+   * packages/apps/Settings
+f282a90 Settings: Update a string.
+
+   * packages/apps/Trebuchet
+dbf12b7 Fix HideIcon behavior in Folders
+
+   * vendor/cm
+17ad226 apns-conf.xml: update verizon apns
+
+===================================
+Since Mon Aug 18 08:54:59 UTC 2014
+===================================
+
+   * device/htc/s4-common
+c9f33bb s4: increase ramdisk_offset
+
+   * frameworks/av
+b120313 libstagefright: Add support for custom LPA buffer size in legacy LPAPlayer
+f9a6c3a libstagefright: Enable meta mode for 7x27a video encoder
+303f526 libstagefright: refactor Legacy LPA makefile
+5fc6701 stagefright: Set bit_width if ENABLE_AV_ENHANCEMENTS is defined
+
+   * frameworks/base
+c301e6c advanced reboot: add soft reboot option
+2578c47 SystemUI: make long pressing recent switch to last app
+49ae28e Revert "QuickSettings : Register/unregister cast tile one time"
+
+   * hardware/qcom/display-caf
+c8a47b5 hwc: rotator is not supported on msm7x27a
+723e7dc display: Cover NO_IOMMU for msm7x30/msm7x27a too
+7a9e396 overlay: Allocate from MM heap as a fallback
+
+   * hardware/qcom/media-caf
+f1ab34a mm-core: Remove obsolete msm7x30 OMX code
+6c87323 mm-video: Use multimedia heap on MSM7x30 (720p) too.
+5d835b4 media-caf: Fix building for msm7x27a
+
+   * kernel/htc/msm8960
+a5a050af3 msm: HTC: s4: update prima config
+fa8e8e5 staging: prima: Get MAC address from WCNSS platform device
+0054c42 staging: prima: setup wcnss before prima loads
+8339dba staging: prima: rebase on sony_msm8x60's driver
+
+   * packages/apps/CMBugReport
+8f6be39 Added a label to the issues 'user' for user-generated bug reports 'crash' for stacktraces
+
+   * packages/apps/CMUpdater
+59f5aae CMUpdater: Create builder for UpdateInfo. Simplify codebase.
+c7611db CMUpdater: Handle download complete in background thread.
+c46c2b9 CMUpdater: Create DownloadNotifier, simplify DownloadReceiver logic.
+
+   * packages/apps/Dialer
+44ef8f7 Dialer: Blacklist call recording for Australia.
+
+   * packages/apps/Settings
+16f777d Wifi Country code
+65ff49a Fix keyboard opening on pattern entry.
+cfa67bc ProtectedApps pattern lock for landscape mode.
+

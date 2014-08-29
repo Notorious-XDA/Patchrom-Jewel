@@ -1,0 +1,128 @@
+reject
+├── android.policy.jar.out
+│   └── smali
+│       └── com
+│           └── android
+│               └── internal
+│                   └── policy
+│                       └── impl
+│                           ├── PhoneWindowManager$13.smali.rej
+│                           ├── PhoneWindowManager$21.smali.rej
+│                           ├── PhoneWindowManager.smali.rej
+│                           └── PhoneWindow.smali.rej
+├── framework2.jar.out
+│   └── smali
+│       └── com
+│           └── android
+│               └── internal
+│                   ├── app
+│                   ├── backup
+│                   ├── os
+│                   │   └── ZygoteInit.smali.rej
+│                   ├── statusbar
+│                   ├── telephony
+│                   ├── view
+│                   │   └── menu
+│                   └── widget
+│                       ├── ActionBarView$ExpandedActionViewMenuPresenter.smali.rej
+│                       ├── ActionBarView.smali.rej
+│                       ├── ILockSettings$Stub.smali.rej
+│                       └── multiwaveview
+│                           └── GlowPadView.smali.rej
+├── framework.jar.out
+│   └── smali
+│       └── android
+│           ├── accounts
+│           ├── app
+│           │   ├── ApplicationPackageManager.smali.rej
+│           │   ├── backup
+│           │   ├── ContextImpl.smali.rej
+│           │   └── ResourcesManager.smali.rej
+│           ├── bluetooth
+│           ├── content
+│           │   ├── pm
+│           │   │   ├── PackageManager.smali.rej
+│           │   │   └── PackageParser.smali.rej
+│           │   └── res
+│           │       └── Configuration.smali.rej
+│           ├── database
+│           ├── graphics
+│           │   └── drawable
+│           ├── hardware
+│           ├── media
+│           │   ├── AudioService.smali.rej
+│           │   └── MediaFile.smali.rej
+│           ├── net
+│           │   ├── http
+│           │   ├── LocalSocketImpl.smali.rej
+│           │   └── wifi
+│           │       └── WifiConfigStore.smali.rej
+│           ├── nfc
+│           ├── os
+│           ├── preference
+│           ├── provider
+│           ├── speech
+│           │   └── tts
+│           ├── telephony
+│           │   └── TelephonyManager.smali.rej
+│           ├── text
+│           │   ├── format
+│           │   └── util
+│           ├── util
+│           ├── view
+│           │   ├── inputmethod
+│           │   └── ViewConfiguration.smali.rej
+│           ├── webkit
+│           └── widget
+│               ├── EdgeEffect.smali.rej
+│               ├── NumberPicker.smali.rej
+│               ├── QuickContactBadge$QueryHandler.smali.rej
+│               └── TimePicker.smali.rej
+├── services.jar.out
+│   └── smali
+│       └── com
+│           └── android
+│               └── server
+│                   ├── accounts
+│                   ├── am
+│                   │   └── ActivityManagerService.smali.rej
+│                   ├── AppOpsService.smali.rej
+│                   ├── connectivity
+│                   ├── DeviceStorageMonitorService.smali.rej
+│                   ├── display
+│                   ├── location
+│                   ├── net
+│                   │   └── NetworkPolicyManagerService.smali.rej
+│                   ├── NetworkManagementService.smali.rej
+│                   ├── NotificationManagerService.smali.rej
+│                   ├── pm
+│                   │   └── PackageManagerService.smali.rej
+│                   ├── power
+│                   │   ├── DisplayPowerController.smali.rej
+│                   │   └── ShutdownThread.smali.rej
+│                   ├── ServerThread.smali.rej
+│                   ├── usb
+│                   └── wm
+└── telephony-common.jar.out
+    └── smali
+        ├── android
+        │   ├── provider
+        │   └── telephony
+        └── com
+            └── android
+                └── internal
+                    └── telephony
+                        ├── cdma
+                        │   └── CDMAPhone.smali.rej
+                        ├── dataconnection
+                        │   └── DcTracker.smali.rej
+                        ├── gsm
+                        │   ├── GSMPhone.smali.rej
+                        │   └── GsmServiceStateTracker.smali.rej
+                        ├── MccTable.smali.rej
+                        ├── SMSDispatcher.smali.rej
+                        └── uicc
+                            ├── AdnRecord.smali.rej
+                            └── UiccCard.smali.rej
+
+82 directories, 43 files

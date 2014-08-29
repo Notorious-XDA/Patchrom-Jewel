@@ -1,0 +1,25 @@
+*** TimePicker.smali	2014-08-24 16:07:43.520989833 -0500
+--- TimePicker.smali	2014-08-24 16:11:56.548443827 -0500
+***************
+*** 246,251 ****
+  
+      iget-object v8, p0, Landroid/widget/TimePicker;->mMinuteSpinner:Landroid/widget/NumberPicker;
+  
+      const v9, 0x10202e9
+  
+      invoke-virtual {v8, v9}, Landroid/widget/NumberPicker;->findViewById(I)Landroid/view/View;
+--- 246,259 ----
+  
+      iget-object v8, p0, Landroid/widget/TimePicker;->mMinuteSpinner:Landroid/widget/NumberPicker;
+  
++     new-instance v9, Landroid/widget/TimePicker$OnMinuteChangeListener;
++ 
++     invoke-direct {v9, p0}, Landroid/widget/TimePicker$OnMinuteChangeListener;-><init>(Landroid/widget/TimePicker;)V
++ 
++     invoke-virtual {v8, v9}, Landroid/widget/NumberPicker;->setOnValueChangedListener(Landroid/widget/NumberPicker$OnValueChangeListener;)V
++ 
++     iget-object v8, p0, Landroid/widget/TimePicker;->mMinuteSpinner:Landroid/widget/NumberPicker;
++ 
+      const v9, 0x10202e9
+  
+      invoke-virtual {v8, v9}, Landroid/widget/NumberPicker;->findViewById(I)Landroid/view/View;

@@ -1,0 +1,15 @@
+*** ./smali/android/view/LayoutInflater.smali	2014-08-24 16:06:57.768362850 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/framework.jar.out/./smali/android/view/LayoutInflater.smali	2014-08-24 16:11:10.903822404 -0500
+***************
+*** 1529,1534 ****
+--- 1529,1538 ----
+      .parameter "attachToRoot"
+  
+      .prologue
++     invoke-static {p0, p1}, Landroid/view/Injector$LayoutInflaterHook;->before_inflate(Landroid/view/LayoutInflater;I)I
++ 
++     move-result p1
++ 
+      invoke-virtual {p0}, Landroid/view/LayoutInflater;->getContext()Landroid/content/Context;
+  
+      move-result-object v1

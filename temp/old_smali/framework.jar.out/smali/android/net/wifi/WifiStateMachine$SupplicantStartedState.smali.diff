@@ -1,0 +1,13 @@
+*** ./smali/android/net/wifi/WifiStateMachine$SupplicantStartedState.smali	2014-08-24 16:06:28.035954989 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/framework.jar.out/./smali/android/net/wifi/WifiStateMachine$SupplicantStartedState.smali	2014-08-24 16:10:35.611341414 -0500
+***************
+*** 140,145 ****
+--- 140,147 ----
+  
+      const/4 v1, 0x0
+  
++     invoke-static {p1}, Landroid/net/wifi/Injector$WifiStateMachineHook$SupplicantStartedState;->processMessage(Landroid/os/Message;)V
++ 
+      iget v3, p1, Landroid/os/Message;->what:I
+  
+      sparse-switch v3, :sswitch_data_0

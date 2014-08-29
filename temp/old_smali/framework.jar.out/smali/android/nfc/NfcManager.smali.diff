@@ -1,0 +1,19 @@
+*** ./smali/android/nfc/NfcManager.smali	2014-08-24 16:08:55.589975923 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/framework.jar.out/./smali/android/nfc/NfcManager.smali	2014-08-24 16:13:08.637423864 -0500
+***************
+*** 64,66 ****
+--- 64,76 ----
+  
+      return-object v0
+  .end method
++ 
++ .method public setPollDuration(I)I
++     .locals 1
++     .parameter "pollDurationMs"
++ 
++     .prologue
++     const/4 v0, 0x0
++ 
++     return v0
++ .end method
+\ No newline at end of file

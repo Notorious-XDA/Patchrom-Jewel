@@ -1,0 +1,19 @@
+*** GlowPadView.smali	2014-08-24 16:06:09.167696002 -0500
+--- GlowPadView.smali	2014-08-24 16:10:13.619041477 -0500
+***************
+*** 5267,5273 ****
+  
+      const/4 v7, 0x0
+  
+!     invoke-direct {p0, v6, v7}, Lcom/android/internal/widget/multiwaveview/GlowPadView;->hideTargets(ZZ)V
+  
+      const/4 v6, 0x0
+  
+--- 5452,5458 ----
+  
+      const/4 v7, 0x0
+  
+!     invoke-virtual {p0, v6, v7}, Lcom/android/internal/widget/multiwaveview/GlowPadView;->hideTargets(ZZ)V
+  
+      const/4 v6, 0x0
+  

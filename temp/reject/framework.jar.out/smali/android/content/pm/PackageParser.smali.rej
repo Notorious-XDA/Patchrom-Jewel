@@ -1,0 +1,58 @@
+*** PackageParser.smali	2014-08-24 16:09:04.130092643 -0500
+--- PackageParser.smali	2014-08-24 16:13:17.249540821 -0500
+***************
+*** 14461,14466 ****
+      .local v11, localCerts:[Ljava/security/cert/Certificate;
+      if-nez v11, :cond_5
+  
+      const-string v15, "PackageParser"
+  
+      new-instance v16, Ljava/lang/StringBuilder;
+--- 14486,14501 ----
+      .local v11, localCerts:[Ljava/security/cert/Certificate;
+      if-nez v11, :cond_5
+  
++     move-object/from16 v0, p1
++ 
++     iget-object v15, v0, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
++ 
++     invoke-static {v10, v15}, Landroid/content/pm/Injector$PackageParserHook;->acceptNoCertificatesPackage(Ljava/util/jar/JarEntry;Ljava/lang/String;)Z
++ 
++     move-result v15
++ 
++     if-nez v15, :cond_3
++ 
+      const-string v15, "PackageParser"
+  
+      new-instance v16, Ljava/lang/StringBuilder;
+***************
+*** 15213,15227 ****
+      .local v25, cookie:I
+      if-eqz v25, :cond_4
+  
+-     new-instance v32, Landroid/content/res/Resources;
+- 
+      const/4 v6, 0x0
+  
+!     move-object/from16 v0, v32
+  
+!     move-object/from16 v1, p3
+  
+!     invoke-direct {v0, v5, v1, v6}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
+      :try_end_1
+      .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+  
+--- 15254,15266 ----
+      .local v25, cookie:I
+      if-eqz v25, :cond_4
+  
+      const/4 v6, 0x0
+  
+!     move-object/from16 v0, p3
+  
+!     invoke-static {v5, v0, v6}, Landroid/content/pm/Injector$PackageParserHook;->createResources(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)Landroid/content/res/Resources;
+  
+!     move-result-object v32
+      :try_end_1
+      .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+  

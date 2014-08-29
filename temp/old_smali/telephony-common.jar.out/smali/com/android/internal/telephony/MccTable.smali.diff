@@ -1,0 +1,15 @@
+*** ./smali/com/android/internal/telephony/MccTable.smali	2014-08-24 16:05:56.239518457 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/telephony-common.jar.out/./smali/com/android/internal/telephony/MccTable.smali	2014-08-24 16:09:59.306846194 -0500
+***************
+*** 3736,3745 ****
+  
+      invoke-static {p0, v3}, Lcom/android/internal/telephony/MccTable;->setTimezoneFromMccIfNeeded(Landroid/content/Context;I)V
+  
+-     invoke-static {p0, v3}, Lcom/android/internal/telephony/MccTable;->getLocaleFromMcc(Landroid/content/Context;I)Ljava/util/Locale;
+- 
+-     move-result-object v2
+- 
+      invoke-static {p0, v3}, Lcom/android/internal/telephony/MccTable;->setWifiCountryCodeFromMcc(Landroid/content/Context;I)V
+  
+      :cond_0
+--- 3736,3741 ----

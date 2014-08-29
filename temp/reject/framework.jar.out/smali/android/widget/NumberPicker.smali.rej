@@ -1,0 +1,21 @@
+*** NumberPicker.smali	2014-08-24 16:07:42.836980464 -0500
+--- NumberPicker.smali	2014-08-24 16:11:55.872434633 -0500
+***************
+*** 187,192 ****
+  
+      sput-object v0, Landroid/widget/NumberPicker;->sTwoDigitFormatter:Landroid/widget/NumberPicker$TwoDigitFormatter;
+  
+      const/16 v0, 0x1e
+  
+      new-array v0, v0, [C
+--- 193,202 ----
+  
+      sput-object v0, Landroid/widget/NumberPicker;->sTwoDigitFormatter:Landroid/widget/NumberPicker$TwoDigitFormatter;
+  
++     sget-object v0, Landroid/widget/NumberPicker;->sTwoDigitFormatter:Landroid/widget/NumberPicker$TwoDigitFormatter;
++ 
++     sput-object v0, Landroid/widget/NumberPicker;->TWO_DIGIT_FORMATTER:Landroid/widget/NumberPicker$Formatter;
++ 
+      const/16 v0, 0x1e
+  
+      new-array v0, v0, [C

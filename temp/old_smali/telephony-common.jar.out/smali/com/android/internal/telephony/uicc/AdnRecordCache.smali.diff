@@ -1,0 +1,13 @@
+*** ./smali/com/android/internal/telephony/uicc/AdnRecordCache.smali	2014-08-24 16:05:51.371451602 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/telephony-common.jar.out/./smali/com/android/internal/telephony/uicc/AdnRecordCache.smali	2014-08-24 16:09:54.022774072 -0500
+***************
+*** 1,4 ****
+! .class public final Lcom/android/internal/telephony/uicc/AdnRecordCache;
+  .super Landroid/os/Handler;
+  .source "AdnRecordCache.java"
+  
+--- 1,4 ----
+! .class public Lcom/android/internal/telephony/uicc/AdnRecordCache;
+  .super Landroid/os/Handler;
+  .source "AdnRecordCache.java"
+  

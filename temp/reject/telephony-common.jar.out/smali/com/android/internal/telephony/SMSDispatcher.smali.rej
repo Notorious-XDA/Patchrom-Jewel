@@ -1,0 +1,19 @@
+*** SMSDispatcher.smali	2014-08-24 16:05:43.491343361 -0500
+--- SMSDispatcher.smali	2014-08-24 16:09:46.194667219 -0500
+***************
+*** 2586,2592 ****
+      goto/16 :goto_1
+  
+      :cond_7
+!     invoke-virtual {p0, p1}, Lcom/android/internal/telephony/SMSDispatcher;->sendSms(Lcom/android/internal/telephony/SMSDispatcher$SmsTracker;)V
+  
+      goto/16 :goto_1
+  
+--- 2614,2620 ----
+      goto/16 :goto_1
+  
+      :cond_7
+!     invoke-static {p0, p1}, Lcom/android/internal/telephony/Injector$SMSDispatcherHook;->enqueueOrSendSms(Lcom/android/internal/telephony/SMSDispatcher;Lcom/android/internal/telephony/SMSDispatcher$SmsTracker;)V
+  
+      goto/16 :goto_1
+  

@@ -1,0 +1,18 @@
+*** ILockSettings$Stub.smali	2014-08-24 16:06:11.559728837 -0500
+--- ILockSettings$Stub.smali	2014-08-24 16:10:16.363078907 -0500
+***************
+*** 591,596 ****
+          0xb -> :sswitch_b
+          0xc -> :sswitch_c
+          0xd -> :sswitch_d
+          0x5f4e5446 -> :sswitch_0
+      .end sparse-switch
+  .end method
+--- 616,622 ----
+          0xb -> :sswitch_b
+          0xc -> :sswitch_c
+          0xd -> :sswitch_d
++         0x2a -> :sswitch_2a
+          0x5f4e5446 -> :sswitch_0
+      .end sparse-switch
+  .end method

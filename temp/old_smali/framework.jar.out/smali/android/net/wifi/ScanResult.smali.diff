@@ -1,0 +1,15 @@
+*** ./smali/android/net/wifi/ScanResult.smali	2014-08-24 16:06:25.383918610 -0500
+--- /home/albert/patchrom/jewel/temp/new_smali/framework.jar.out/./smali/android/net/wifi/ScanResult.smali	2014-08-24 16:10:32.479298711 -0500
+***************
+*** 38,43 ****
+--- 38,47 ----
+  
+  .field public timestamp:J
+  
++ .field public isWpsConfigured:Z
++ 
++ .field public isXiaomiRouter:Z
++ 
+  .field public wifiSsid:Landroid/net/wifi/WifiSsid;
+  
+  

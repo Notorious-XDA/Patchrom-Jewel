@@ -1,0 +1,144 @@
+*** PhoneWindowManager.smali	2014-08-24 16:06:21.395863864 -0500
+--- PhoneWindowManager.smali	2014-08-24 16:10:28.187240187 -0500
+***************
+*** 3371,3379 ****
+      xor-int v0, v3, v6
+  
+      .local v0, diff:I
+!     iget-object v6, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mTopFullscreenOpaqueWindowState:Landroid/view/WindowManagerPolicy$WindowState;
+  
+!     invoke-interface {v4, v6}, Landroid/view/WindowManagerPolicy$WindowState;->getNeedsMenuLw(Landroid/view/WindowManagerPolicy$WindowState;)Z
+  
+      move-result v1
+  
+--- 3381,3391 ----
+      xor-int v0, v3, v6   i couldnt find the next one #applywindow the question is has your original code had the same v and p? let me check
+  different ones, so with your merged reject port would never boot v and p make that much of diff? they make all the difference you might not see it in smali, but you would do in java so pretty much never change v and p from the original? correct
+okay when reject code is not so obvious i used to check in original smali when it''s placed and wr are in right place      
+
+.local v0, diff:I
+!     iget-object v10, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mFocusedWindow:Landroid/view/WindowManagerPolicy$WindowState;
+! 
+!     iget-object v11, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mTopFullscreenOpaqueWindowState:Landroid/view/WindowManagerPolicy$WindowState;
+  
+!     invoke-static {v10, v11}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->getNeedsMenuLw(Landroid/view/WindowManagerPolicy$WindowState;Landroid/view/WindowManagerPolicy$WindowState;)Z
+  
+      move-result v1
+  
+***************
+*** 4406,4411 ****
+  
+      .end local v0           #applyWindow:Z
+      :cond_a
+      return-void
+  
+      :cond_b
+--- 4418,4425 ----
+  letme use notepad++ to tag and find quick, ok p0,p1 and p2 are same one in your smali if i have to add the line doees the p still matter? yeah -_- it matter all the time and this is why i use windows to get access to notepad++ it compares such things so easy just double tap on vlevel and see which lines contain the same v then do the same and you take v from the same lines but from your original smali
+      .end local v0           #applyWindow:Z
+      :cond_a
++     invoke-static {p0, p1, p2}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->setAboveStatusBarFullScreenWindow(Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/view/WindowManagerPolicy$WindowState;Landroid/view/WindowManager$LayoutParams;)V
++ 
+      return-void
+  
+      :cond_b
+***************
+*** 5406,5425 ****
+  
+      if-nez v2, :cond_7
+  
+-     move-object/from16 v0, p0
+- 
+-     iget v2, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mUnrestrictedScreenTop:I
+- 
+-     move-object/from16 v0, p0
+- 
+-     iget v3, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mStatusBarHeight:I
+- 
+-     add-int/2addr v2, v3
+- 
+-     move-object/from16 v0, p0
+- 
+-     iput v2, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mSystemTop:I
+- 
+      :cond_7
+      move-object/from16 v0, p0
+  - is this one done? yes
+--- 5420,5425 ----
+  
+      if-nez v2, :cond_7
+  
+      :cond_7
+      move-object/from16 v0, p0
+  
+***************
+*** 10037,10042 ****
+  
+      if-eqz v3, :cond_6
+  
+      const-string v3, "WindowManager"
+  
+      const-string v5, "Ignoring HOME; there\'s a ringing incoming call."
+--- 10094,10109 ----
+  
+      if-eqz v3, :cond_6
+  
++     move-object/from16 v0, p0
++ 
++     iget-object v35, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
++ 
++     invoke-static {v35}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->isInCallScreenShowing(Landroid/content/Context;)Z
++ 
++     move-result v35
++ 
++     if-eqz v35, :cond_e
++ 
+      const-string v3, "WindowManager"
+  this one? i thought i did this one you see miui cond6 is your conde
+      const-string v5, "Ignoring HOME; there\'s a ringing incoming call."
+***************
+*** 11323,11329 ****
+  
+      .local v6, isWakeKey:Z
+      :goto_4
+!     if-eqz v2, :cond_3
+  
+      move/from16 v0, p2
+  
+--- 11390,11396 ----
+  
+      .local v6, isWakeKey:Z
+      :goto_4
+!     invoke-static/range {p0 .. p2}, Lcom/android/internal/policy/impl/PhoneWindowManager$Injector;->performReleaseHapticFeedback(Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/view/KeyEvent;I)V
+  
+      move/from16 v0, p2
+  
+***************
+*** 17041,17053 ****
+      move-result v0
+  
+      .local v0, keyguardShowing:Z
+!     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:Lcom/android/internal/policy/impl/GlobalActions;
+  
+      invoke-virtual {p0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->isDeviceProvisioned()Z
+  
+      move-result v2
+  
+!     invoke-virtual {v1, v0, v2}, Lcom/android/internal/policy/impl/GlobalActions;->showDialog(ZZ)V
+  
+      if-eqz v0, :cond_1
+  
+--- 17215,17227 ----
+      move-result v0
+  
+      .local v0, keyguardShowing:Z
+!     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mGlobalActions:Lcom/android/internal/policy/impl/MiuiGlobalActions;
+  
+      invoke-virtual {p0}, Lcom/android/internal/policy/impl/PhoneWindowManager;->isDeviceProvisioned()Z
+  
+      move-result v2
+  
+!     invoke-virtual {v1, v0, v2}, Lcom/android/internal/policy/impl/MiuiGlobalActions;->showDialog(ZZ)V
+  
+      if-eqz v0, :cond_1
+  
