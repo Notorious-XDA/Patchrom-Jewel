@@ -27,7 +27,7 @@ ro.build.product=jewel
 ro.product.model=EVO
 ro.product.device=jewel
 # Do not try to parse ro.build.description or .fingerprint
-ro.build.description=4.13.651.4 CL310297 release-keys
+ro.build.description=cm_jewel-userdebug 4.4.4 KTU84Q CL310297 release-keys
 ro.build.fingerprint=htc/sprint_wwe/jewel:4.3/JSS15Q/310297.4:user/release-keys
 ro.build.characteristics=default
 ro.cm.device=jewel
