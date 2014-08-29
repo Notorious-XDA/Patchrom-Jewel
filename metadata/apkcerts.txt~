@@ -13,7 +13,7 @@ name="CertInstaller.apk" certificate="build/target/product/security/platform.x50
 name="CMAccount.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="CMFileManager.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="CMHome.apk" certificate="PRESIGNED" private_key=""
-name="CMS.apk" certificate="PRESIGNED" private_key=""
+name="CMS.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="CMUpdater.apk" certificate="PRESIGNED" private_key=""
 name="CMWallpapers.apk" certificate="PRESIGNED" private_key=""
 name="Contacts.apk" certificate="build/target/product/security/shared.x509.pem" private_key="build/target/product/security/shared.pk8"
